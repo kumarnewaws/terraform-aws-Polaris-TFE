@@ -8,8 +8,8 @@ resource "aws_route53_record" "www" {
   name    = "app.testcgit.xyz"
   type    = "A"
   alias {
-    name                   = module.prodELB.elb_dns_name
-    zone_id                = module.prodELB.elb_zone_id
+    name                   = module.elb.elb_dns_name
+    zone_id                = module.elb.elb_zone_id
     evaluate_target_health = true
   }
 }

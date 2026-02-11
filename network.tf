@@ -7,5 +7,5 @@ module "network" {
   private_subnet_cidr = ["192.168.10.0/24", "192.168.20.0/24", "192.168.30.0/24"]
   az                  = ["us-east-1a", "us-east-1b", "us-east-1c"]
   env                 = "Prod"
-  NGW_ID              = module.prodnat.ngw_id
+  NGW_ID              = module.nat.ngw_id
 }
